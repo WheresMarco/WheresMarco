@@ -1,17 +1,24 @@
-<!DOCTYPE HTML>
-
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="author" content="Your Name" />
-    <title>{{ page.title }}</title>
-  </head>
-  <body>
-    <header>
-      <h1><a href="/">{{ page.title }}</a></h1>
-    </header>
-    <section>
-      {{ content }}
-    </section>
-  </body>
+<!DOCTYPE html>
+<html lang="se">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} Marco Hyyryläinen - Webbutvecklare</title>
+  <meta name="description" content="Jag är Marco Hyyryläinen: webbutvecklare, amatör-teknikjournalist och kaffeentusiast." />
+  <meta name="keywords" content="marco, hyyryläinen, webbutvecklare, amatör-teknikjournalist, kaffeentusiast, frilansare, frilans, hemsidor, kod, wordpress, företag, egen, hemsida, webbbyrå, webb, byrå, design" />
+    
+  <!-- Apple-stuff -->
+  <meta name="apple-mobile-web-app-title" content="WheresMarco">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" />
+  
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div class="wrap fadein">
+  <div class="grids">
+    {{ content }}
+  </div>
+</div>
+</body>
 </html>
