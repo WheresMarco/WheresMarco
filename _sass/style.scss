@@ -1,0 +1,153 @@
+@import "_reset.scss";
+@import "_toast.scss";
+
+/* Fonts */
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+
+@each $font-face in "Novecentowide-Bold-webfont", "Novecentowide-DemiBold-webfont", "Novecentowide-Normal-webfont", "icomoon"  {
+    @font-face { font-weight: normal; font-style: normal;
+          font-family: $font-face;
+          src: url('font/#{$font-face}.eot');
+          src: url('font/#{$font-face}.eot?') format('eot'),
+               url('font/#{$font-face}.woff') format('woff'),
+               url('font/#{$font-face}.ttf')  format('truetype');
+    }
+}
+
+/* Mixins */
+@mixin font($font, $style: normal, $weight: normal) {
+    font-weight: $weight;
+    font-style:  $style;
+    font-family: $font, sans-serif;
+}
+
+/* The main show */
+body {
+	@include font("Source Sans Pro");
+	font-size: 100%/1.5;
+	overflow-x: hidden;
+	background-color: #F8F8F8;
+	color: #4D4D4D;
+	-webkit-font-smoothing: antialiased;
+}
+
+[data-icon]:before {
+	@include font("icomoon");
+	content: attr(data-icon);
+	speak: none;
+}
+
+a { color: #87C48F; text-decoration: none; font-weight: bold; }
+	a:hover { opacity: 0.6; }
+
+.wrap { margin-top: 35px; }
+
+header { 
+	text-align: center; 
+
+	img {
+		margin-bottom: 20px;
+	}
+
+	h1 {
+		@include font("Novecentowide-Bold-webfont");
+		color: #4F4F4F;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 4.875em;
+		line-height: 1.2em;
+	}
+
+	h3 {
+		@include font("Novecentowide-DemiBold-webfont");
+		margin-bottom: 2em;
+		color: #C1C1C1;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.375em;
+		line-height: 1em;
+	}
+
+	.logo {
+		margin: 0 auto 20px auto; 
+		width: 100px; 
+		height: 100px; 
+		background: url("img/logo.png") no-repeat; 
+		background-size: 100px 100px;
+
+		a {
+			position: absolute; 
+			width: 300px; 
+			height: 100px;
+		}
+
+		h1 {
+			display: none;
+		}
+	}
+}
+
+.front-box {
+    margin-bottom: 40px !important;
+    padding: 10px 15px 15px 15px;
+    background: #fff;
+    text-align: center;
+    line-height: 24px;
+
+    .icon {
+    	margin: 40px 0;
+    	font-size: 84px;
+    }
+
+    .arrow {
+    	position: relative; 
+    	top: 1px; 
+    	font-size: 22px;
+    }
+
+    h4 {
+    	@include font("Novecentowide-DemiBold-webfont"); 
+    	margin-bottom: 5px; 
+    	font-size: 20px;
+
+    	a {
+    		color: #4D4D4D; 
+    		font-weight: normal;
+    	}
+    }
+}
+			
+.case-header { margin-bottom: 40px !important; }
+.case { 
+	margin-bottom: 40px !important; 
+	max-height: 306px; 
+	background: #fff; 
+
+	.meta {
+		padding: 15px;
+
+		p {
+			margin-bottom: 20px;
+		}
+	}
+
+	h4 {
+		@include font("Novecentowide-DemiBold-webfont"); 
+		margin-bottom: 10px; 
+		font-size: 20px;
+
+		a {
+			color: #4D4D4D; 
+			font-weight: normal;
+		}
+	}
+}
+		
+#action { 
+	letter-spacing: 0px; 
+
+	a {
+		color: #87C48F; 
+		font-weight: normal; 
+	}
+}
