@@ -2,29 +2,13 @@
 layout: layout
 ---
 
-<header class="grid-12">
-	<div class="logo"></div>
-	<h1>Webb, Kod & Design</h1>
-	<h3>Marco Hyyryläinen, Webbutvecklare med 5 års erfarenhet</h3>
-</header>
-	
-<div class="grid-4 front-box">
-	<div class="icon" aria-hidden="true" data-icon="&#x21;"></div>
-	<h4><a href="http://journalen.wheresmar.co/" target="_blank">Journalen</a></h4>
-	<p>Följ med bakom kulisserna på mitt arbete som frilansare. <a href="http://journalen.wheresmar.co/" target="_blank" class="arrow">&rarr;</a></p>
-</div>
-		
-<div class="grid-4 front-box">
-	<div class="icon" aria-hidden="true" data-icon="&#x23;"></div>
-	<h4><a href="arbeten/">Arbeten</a></h4>
-	<p>Utvalda kunder som jag har arbetat med under åren. <a href="/arbeten/" class="arrow">&rarr;</a></p>
-</div>
-		
-<div class="grid-4 front-box">
-	<div class="icon" aria-hidden="true" data-icon="&#x22;"></div>
-	<h4>Kontakt</h4>
+<main class="grid-9 archive">
 	<ul>
-		<li><a href="mailto:marco@wheresmar.co">marco@wheresmar.co</a></li>
-		<li><a href="callto:+46735082157">+46 735 08 21 57</a></li>
-	</ul>
-</div>
+		{% for post in site.posts %}
+    		<li>
+      			<a class="grid-10" href="{{ post.url }}">{{ post.title }}</a>
+      			<span class="grid-2">{{ post.date | date: "%b %Y" }}</span>
+    		</li>
+  		{% endfor %}
+    </ul>
+</main>
