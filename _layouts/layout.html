@@ -15,22 +15,40 @@
   <link rel="stylesheet" type="text/css" href="/style.css"/>
 </head>
 <body>
+	<header class="parallax" data-velocity="-.6">
+		<div class="wrap info">
+			<h1>Marco Hyyryläinen</h1>
+			<h3>Webbutvecklare och grafisk formgivare med starkt kaffeintresse.</h3>
+
+			<ul>
+				<li><a href="#"><div class="fs1" aria-hidden="true" data-icon="!"></div></a></li>
+				<li><a href="#"><div class="fs1" aria-hidden="true" data-icon="&quot;"></div></a></li>
+				<li><a href="#"><div class="fs1" aria-hidden="true" data-icon="#"></div></a></li>
+				<li><a href="#"><div class="fs1" aria-hidden="true" data-icon="$"></div></a></li>
+			</ul>
+		</div>
+	</header>
+
+
 	<div class="wrap fadein">
 		<div class="grids">
-			<aside class="grid-3">
-	  			<div class="logo"></div>
-	  			<p><span>Hej, jag är Marco</span></p>
-	  			<p>Webbutvecklare och grafisk formgivare med starkt kaffeintresse.</p><p>Driver även en liten webbyrå.</p>
-
-	  			<ul>
-	  				<li><a href="#">Om mig</a></li>
-	  				<li><a href="#">marco@wheresmar.co</a></li>
-	  				<li><a href="#">+46 735 08 21 57</a></li>
-	  			</ul>
-	    	</aside>
-
 	    	{{ content }}
 	  	</div>
 	</div>
+
+	<footer>
+		<div class="wrap">
+			
+			<p class="footer-mark">Made with love in Köping.</p>
+		</div>
+	</footer>
+
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="/js/jquery.scrolly.js"></script>
+	<script>
+	    $(document).ready(function(){
+	       $('.parallax').scrolly({bgParallax: true});
+	    });
+	</script>
 </body>
 </html>

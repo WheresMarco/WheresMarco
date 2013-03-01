@@ -2,13 +2,12 @@
 layout: layout
 ---
 
-<main class="grid-9 archive">
-	<ul>
-		{% for post in site.posts %}
-    		<li>
-      			<a class="grid-10" href="{{ post.url }}">{{ post.title }}</a>
-      			<span class="grid-2">{{ post.date | date: "%b %Y" }}</span>
-    		</li>
-  		{% endfor %}
-    </ul>
+<main class="grid-12">
+	{% for post in site.posts %}
+		<article>
+    		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    		<p class="date">{{ post.date | date: "%b %Y" }}</p>
+      		{{ post.content }}
+      	</article>
+  	{% endfor %}
 </main>
