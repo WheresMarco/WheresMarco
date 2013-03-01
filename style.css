@@ -188,18 +188,23 @@ aside .logo {
     height: 100px; }
   aside .logo h1 {
     display: none; }
-aside h1 {
+aside span {
   font-weight: normal;
   font-style: normal;
   font-family: "Novecentowide-Bold-webfont", sans-serif;
-  font-size: 1.1em; }
-  aside h1 a {
+  color: #4D4D4D; }
+  aside span a {
     color: #4D4D4D;
     font-weight: normal; }
 aside p {
   line-height: 1.3em;
   margin-top: 0.3em;
   color: #C1C1C1; }
+aside ul {
+  margin-top: 1em; }
+  aside ul li {
+    padding: 0.5em 0;
+    border-bottom: 0.1em solid #cccccc; }
 
 .archive li {
   font-size: 1.25em;
