@@ -203,7 +203,7 @@ header {
       opacity: 0.5; }
       header .info li a {
         color: #fff; }
-        header .info li a :hover {
+        header .info li a:hover {
           opacity: 1; }
 
 article {
