@@ -186,7 +186,7 @@ header {
       font-style: normal;
       font-family: "Novecentowide-Bold-webfont", sans-serif;
       color: #fff;
-      font-size: 2.8em;
+      font-size: 2.6em;
       margin-bottom: 0.25em;
       line-height: 1.2em;
       -webkit-transition: 0.2s ease-in-out; }
@@ -195,18 +195,19 @@ header {
       font-style: normal;
       font-family: "Novecentowide-DemiBold-webfont", sans-serif;
       font-size: 0.9em;
+      line-height: 1.5em;
       color: #FFF;
       display: block;
-      margin-top: -3px; }
+      margin: -0.5em 0; }
     header .info li {
       float: left;
-      font-size: 2em;
+      font-size: 1.8em;
       margin-right: 0.5em;
-      margin-top: 0.5em;
-      opacity: 0.5; }
-      header .info li a {
-        color: #fff; }
-        header .info li a:hover {
+      margin-top: 0.5em; }
+      header .info li a .icon {
+        color: #fff;
+        opacity: 0.5; }
+        header .info li a .icon:hover .icon {
           opacity: 1; }
 
 article {
