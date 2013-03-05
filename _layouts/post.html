@@ -2,11 +2,10 @@
 layout: layout
 ---
 
-<div class="grid-9 post">
-    <h4>{{ page.title }}</h4>
-    {{ content }}
-
-    <p class="follow">
-		Du borde följa mig på <a href="http://twitter.com/wheresmarco" target="_blank">Twitter</a>.
-    </p>
-</div>
+<main class="grid-12">
+	<article>
+    	<h2><a href="{{ url }}">{{ page.title }}</a></h2>
+    	<p class="date">{{ page.date | date: "%b %Y" }}</p>
+      	{{ content }}
+      </article>
+</main>
