@@ -180,7 +180,10 @@ header {
   background: url("/img/header.jpg") no-repeat #87c48f;
   background-size: cover; }
   header .info {
-    padding-top: 130px; }
+    padding-top: 8.5em; }
+    @media (max-width: 515px) {
+      header .info {
+        padding-top: 5.5em; } }
     header .info h1 {
       font-weight: normal;
       font-style: normal;
@@ -190,6 +193,11 @@ header {
       margin-bottom: 0.25em;
       line-height: 1.2em;
       -webkit-transition: 0.2s ease-in-out; }
+      header .info h1 a {
+        color: #fff; }
+      @media (max-width: 515px) {
+        header .info h1 {
+          font-size: 2.4em; } }
     header .info h3 {
       font-weight: normal;
       font-style: normal;
@@ -213,7 +221,7 @@ header {
 article {
   padding-top: 65px;
   padding-bottom: 45px;
-  border-bottom: 1px solid #dfdfdf; }
+  border-bottom: 1px solid #eaeaea; }
   article h2 {
     font-weight: normal;
     font-style: normal;
@@ -243,5 +251,7 @@ footer {
   width: 100%;
   padding: 50px 0 40px 0;
   background-color: #eaeaea; }
+  footer .twitter-follow-button {
+    margin-bottom: 1em; }
   footer .mark {
-    float: right; }
+    margin-bottom: 1em; }
