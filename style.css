@@ -17,12 +17,19 @@ h1 {
   margin-bottom: 1.5rem; }
 
 a {
-  color: #d66258;
+  color: #fdbb56;
   text-decoration: none;
   font-weight: bold; }
 
 body {
-  background-color: #433f4d;
+  background-color: #de4c76;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d83b65), to(#e55d87));
+  background-image: -webkit-linear-gradient(top, #d83b65, #e55d87);
+  background-image: -moz-linear-gradient(top, #d83b65, #e55d87);
+  background-image: -o-linear-gradient(top, #d83b65, #e55d87);
+  background-image: -ms-linear-gradient(top, #d83b65, #e55d87);
+  background-image: linear-gradient(top, #d83b65, #e55d87);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#d83b65', EndColorStr='#e55d87');
   font: 150%/1.5 "PT Sans", serif;
   color: white;
   letter-spacing: 1px;
