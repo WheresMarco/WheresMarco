@@ -1,0 +1,9 @@
+/* TEAM */
+Name: Marco Hyyryläinen
+Title: Web Developer
+Site: http://wheresmar.co/
+Twitter: @WheresMarco
+Location: Kalmar, Sweden
+
+/* SITE */
+Handwritten SASS compiled with CodeKit into a nice HTML5 page.
