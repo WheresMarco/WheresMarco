@@ -31,6 +31,13 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+h2 {
+  @media only screen and (max-width: 1024px) {
+    font-size: 1.3em;
+    line-height: 1.1em;
+  }
+}
+
 p {
   margin-bottom: 1em;
   font-size: 0.9em;
@@ -53,6 +60,11 @@ a {
 .wrapper {
   margin: 80px auto;
   max-width: 830px;
+
+  @media only screen and (max-width: 768px) {
+   margin: 30px 0;
+   padding: 0 10px;
+  }
 }
 
 #spotify-live {
@@ -63,13 +75,22 @@ a {
   margin-top: 30px;
 
   h2 {
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 15px;
+
+    @media only screen and (max-width: 1024px) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
   }
 
   .case {
     width: 49%;
     float: left;
+
+    @media only screen and (max-width: 405px) {
+      width: 100%;
+    }
 
     &:hover img {
       filter: grayscale(0%);
@@ -77,12 +98,16 @@ a {
 
     &:nth-of-type(2n) {
       margin-left: 2%;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+
+      @media only screen and (max-width: 375px) {
+        margin: 0;
+      }
     }
 
     a {
       h3 {
-        color: $white;  
+        color: $white;
       }
     }
 
