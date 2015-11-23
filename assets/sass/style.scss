@@ -71,13 +71,26 @@ a {
     width: 49%;
     float: left;
 
+    &:hover img {
+      filter: grayscale(0%);
+    }
+
     &:nth-of-type(2n) {
       margin-left: 2%;
       margin-bottom: 20px;
     }
 
+    a {
+      h3 {
+        color: $white;  
+      }
+    }
+
     img {
       max-width: 100%;
+      filter: grayscale(100%);
+      -webkit-transition: all 0.3s;
+      border-radius: 4px;
     }
 
     h3 {

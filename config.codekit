@@ -22,6 +22,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/case\/cirkus.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 164390,
+		"inputAbbreviatedPath": "\/assets\/img\/case\/cirkus.png",
+		"outputAbbreviatedPath": "\/assets\/img\/case\/cirkus.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/case\/kalmarsommar.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14328,
+		"inputAbbreviatedPath": "\/assets\/img\/case\/kalmarsommar.png",
+		"outputAbbreviatedPath": "\/assets\/img\/case\/kalmarsommar.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/case\/norduppropet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13417,
+		"inputAbbreviatedPath": "\/assets\/img\/case\/norduppropet.png",
+		"outputAbbreviatedPath": "\/assets\/img\/case\/norduppropet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/case\/vaxjobostader.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20253,
+		"inputAbbreviatedPath": "\/assets\/img\/case\/vaxjobostader.png",
+		"outputAbbreviatedPath": "\/assets\/img\/case\/vaxjobostader.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/sass\/style.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
