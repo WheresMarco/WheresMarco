@@ -67,6 +67,7 @@ a {
       .case-list .case {
         width: 100%; } }
     .case-list .case:hover img {
+      -webkit-filter: grayscale(0%);
       filter: grayscale(0%); }
     .case-list .case:nth-of-type(2n) {
       margin-left: 2%;
@@ -78,6 +79,7 @@ a {
       color: #ffffff; }
     .case-list .case img {
       max-width: 100%;
+      -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
       -webkit-transition: all 0.3s;
       border-radius: 4px; }
