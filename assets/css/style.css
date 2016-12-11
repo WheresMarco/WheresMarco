@@ -123,7 +123,7 @@ p {
   }
     main .intro {
       width: 55%;
-      max-width: 820px;
+      max-width: 1000px;
     }
 
       main .intro h1 {
@@ -203,3 +203,16 @@ p {
       main.contact ul li h3 a {
         color: rgb(255, 255, 255);
       }
+
+  main.post {
+    padding: 0 10%;
+    max-height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+    main.post .page-header h1 {
+      font-size: 2.5rem;
+      line-height: 3.2rem;
+      font-weight: 300;
+    }
