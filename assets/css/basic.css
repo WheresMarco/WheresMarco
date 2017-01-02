@@ -1,0 +1,263 @@
+/*  RESET
+ *
+ *	Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ *	http://cssreset.com
+------------------------------------------------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form,
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+    border: none;
+    font: inherit;
+    font-size: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+em {
+  font-style: italic;
+}
+
+blockquote {
+  font-style: italic;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1%;
+  font-weight: 300;
+}
+
+
+/*	Apply a natural box layout model to all elements, but allowing components to change
+------------------------------------------------------------------------------------------------------- */
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*	CLEARFIX
+ *  Fixes collapsed element groups when applied.
+ *  Hardcoded wp-gallaries to automaticly inherit the clearfix.
+------------------------------------------------------------------------------------------------------- */
+
+.group:before, .group:after {
+	content: " ";
+	display: table;
+	height: 0;
+	visibility: hidden;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  ELEMENTS
+------------------------------------------------------------------------------------------------------- */
+
+
+/*  Tables
+------------------------------------------------------------------------------------------------------- */
+
+table {
+    border: .1rem solid rgba( 224, 221, 201, 1 );
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: rgba( 55, 53, 51, 1 );
+    empty-cells: show;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+thead {
+    background: rgba( 224, 221, 201, 1 );
+    color: rgba( 55, 53, 51, 1 );
+    text-align: left;
+    vertical-align: bottom;
+}
+
+th:first-child {
+    border-left-width: 0;
+}
+
+td, th {
+    border-left: .1rem solid rgba( 224, 221, 201, 1 );
+    font-size: inherit;
+    margin: 0 0 0 0;
+    overflow: visible;
+    padding: .5rem 1rem .5rem 1rem;
+    text-align: left;
+}
+
+/*  WordPress
+ *  Set all necessary WP classes for Images, Galleies, Aligns, Captions
+------------------------------------------------------------------------------------------------------- */
+
+figure {
+    width: none !important;
+}
+
+.aligncenter,
+a img.aligncenter,
+.alignnone,
+a img.alignnone,
+.wp-caption.alignnone,
+p img.alignnone {
+    display: block;
+    margin: .5rem auto 1.3rem auto;
+}
+
+.alignleft,
+a img.alignleft,
+.wp-caption.alignleft,
+p img.alignleft {
+    float: left;
+    margin: .5rem 2rem 1.3rem 0;
+}
+
+a img.alignright,
+p img.alignright,
+.alignright,
+.wp-caption.alignright {
+    float: right;
+    margin: .5rem 0 1.3rem 2rem;
+}
+
+.wp-caption {
+    text-align: center;
+    width: auto !important;
+}
+
+.wp-caption img,
+p img {
+    border: none;
+    height: auto;
+    margin: 0 0 0 0;
+    max-width: 100%;
+    padding: 0 0 0 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    margin: 0;
+    padding: 0 .4rem .5rem .4rem;
+}
+
+.attachment-post-thumbnail {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+.gallery {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+    display: flex;
+        -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.gallery img {
+    height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+    width: auto;
+}
+
+.gallery figure {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: 50%;
+}
+
+.gallery figure a {
+    display: block;
+}
+
+.wp-caption-text {
+    color: rgba( 102, 102, 102, 1 );
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1.2rem 0 1.2rem 0;
+    text-align: center;
+}
+
+.sticky {}
+
+.gallery-caption {}
+
+.bypostauthor {}
+
+/* Text meant only for screen readers */
+
+.screen-reader-text {
+	clip: rect( .1rem, .1rem, .1rem, .1rem );
+    height: .1rem;
+	position: absolute !important;
+	overflow: hidden;
+    width: .1rem;
+}
+
+.screen-reader-text:focus {
+	background-color: rgba( 241, 241, 241, 1 );
+	border-radius: .3rem .3rem .3rem .3rem;
+	box-shadow: 0 0 .2rem .2rem rgba( 0, 0, 0, 0.6 );
+	clip: auto !important;
+	color: rgba( 33, 117, 155, 1 );
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 700;
+	height: auto;
+	left: .5rem;
+	line-height: normal;
+	padding: 1.5rem 2.3rem 1.4rem 2.3rem;
+	text-decoration: none;
+	top: .5rem;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}

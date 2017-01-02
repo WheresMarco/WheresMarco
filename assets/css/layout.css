@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+
+html {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(rgb(177, 0, 69), rgb(74, 0, 76));
+}
+
+body.page-template-pagetemplate-contact {
+  background: rgb(255, 255, 255);
+}
+
+a {
+  color: rgb(140, 0, 68);
+  text-decoration: none;
+}
+
+p {
+  margin: 3% 0;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+.wrapper {
+  background-color: rgb(255, 255, 255);
+  color: rgb(72, 72, 72);
+  margin: 1%;
+  height: 96%;
+  width: 98%;
+}
+
+  body.page-template-pagetemplate-contact .wrapper {
+    background: linear-gradient(rgb(177, 0, 69), rgb(74, 0, 76));
+  }
+
+  header {
+    height: 30%;
+  }
+
+    header nav {
+      margin: 3% -1% 0 0;
+      float: right;
+      width: 60%;
+    }
+
+      header nav ul {
+        list-style: none;
+      }
+
+        header nav li {
+          float: right;
+          margin-right: 7%;
+        }
+
+          header nav li.current-menu-item a {
+            color: rgb(177, 0, 69);
+            border-bottom: 2px solid rgb(177, 0, 69);
+          }
+
+          body.page-template-pagetemplate-contact .wrapper header nav li.current-menu-item a {
+            border-bottom: 2px solid rgb(255, 255, 255);
+          }
+
+          body.page-template-pagetemplate-contact .wrapper header nav li.current-menu-item a,
+          body.page-template-pagetemplate-contact .wrapper header nav li a {
+            color: rgb(255, 255, 255);
+          }
+
+          header nav li a {
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-decoration: none;
+            color: rgb(72, 72, 72);
+          }
+
+          header nav li a:hover {
+            color: rgb(177, 0, 69);
+          }
+
+    header h1 {
+      float: left;
+      text-align: left;
+      margin: 2.5% 0 0 3%;
+      width: 30%;
+      font-size: 2.2rem;
+      font-weight: 400;
+    }
+
+      header h1 a {
+        color: rgb(177, 0, 69);
+      }
+
+      body.page-template-pagetemplate-contact .wrapper header h1 a {
+        color: rgb(255, 255, 255);
+      }
+
+  main.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+  }
+    main .intro {
+      width: 55%;
+      max-width: 1000px;
+    }
+
+      main .intro h1 {
+        font-size: 2.5rem;
+        line-height: 3.2rem;
+        font-weight: 300;
+      }
+
+        main .intro h1 span {
+          color: rgb(140, 0, 68);
+        }
+
+  main.page {
+    padding: 0 10%;
+  }
+
+    main.page h1 {
+      font-size: 2.5rem;
+      line-height: 3.2rem;
+      font-weight: 300;
+    }
+
+    main.page h2 {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      font-weight: 300;
+    }
+
+    main.page p + h2 {
+      margin-top: 2.5rem;
+    }
+
+    main.page h3 {
+      font-size: 1.1rem;
+      margin-top: 1%;
+      font-weight: 300;
+    }
+
+    main.page .intro,
+    main.post .intro {
+      width: 45%;
+      margin-right: 5%;
+      float: left;
+    }
+
+    main.page .content,
+    main.post .content {
+      position: relative;
+      width: 50%;
+      float: left;
+      max-height: 500px;
+      overflow: scroll;
+    }
+
+  main.contact {
+    margin-left: 10%;
+    margin-top: 8%;
+  }
+
+    main.contact ul {
+      color: rgb(255, 255, 255);
+      list-style: none;
+    }
+
+      main.contact ul li {
+        width: 33%;
+        float: left;
+      }
+
+      main.contact ul li h2 {
+        font-size: 1.5rem;
+        color: rgb(255, 193, 199);
+      }
+
+      main.contact ul li h3 {
+        font-size: 1.8rem;
+      }
+
+      main.contact ul li h3 a {
+        color: rgb(255, 255, 255);
+      }
+
+  main.post {
+    padding: 0 10%;
+  }
+
+    main.post h1 {
+      font-size: 2.5rem;
+      line-height: 3.2rem;
+      font-weight: 300;
+    }
+
+    main.post h3 {
+      font-size: 1.1rem;
+      margin-top: 1%;
+      font-weight: 300;
+    }
