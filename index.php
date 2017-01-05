@@ -1,21 +1,29 @@
 <?php get_header(); ?>
 
-  <main id="site-content">
-      <?php // 404 Page Not Found or empty archives etc.
+  <main class="page" role="main">
+      <div class="intro">
 
-      if ( have_posts() ) :
+        <h1><?php the_title(); ?></h1>
+        <?php the_excerpt(); ?>
 
-          // The basic loop
-          while ( have_posts() ) : the_post();
+      </div>
 
-              // Load the appropriate content template
-              get_template_part( 'content', get_post_format() );
+      <div class="content">
+        <?php // 404 Page Not Found or empty archives etc.
 
-          // End the loop
-          endwhile;
+        if ( have_posts() ) :
 
-      endif;
-      ?>
+            // The basic loop
+            while ( have_posts() ) : the_post();
+
+                get_template_part( 'item', 'post-excerpt' );
+
+            // End the loop
+            endwhile;
+
+        endif;
+        ?>
+      </div>
   </main>
 
 <?php get_footer(); ?>

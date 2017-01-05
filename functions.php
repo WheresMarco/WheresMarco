@@ -30,6 +30,9 @@
     // Add support for editor-style.css
     add_editor_style();
 
+    // Add excerpt support for pages
+    add_post_type_support( 'page', 'excerpt' );
+
   } );
 
 

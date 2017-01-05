@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
-
 html {
-  height: 100%;
-  overflow: hidden;
+  height: 98%;
   width: 100%;
 }
 
@@ -13,6 +11,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   background: linear-gradient(rgb(177, 0, 69), rgb(74, 0, 76));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 1%;
 }
 
 body.page-template-pagetemplate-contact {
@@ -33,9 +34,8 @@ p {
 .wrapper {
   background-color: rgb(255, 255, 255);
   color: rgb(72, 72, 72);
-  margin: 1%;
-  height: 96%;
-  width: 98%;
+  min-height: 102%;
+  width: 100%;
 }
 
   body.page-template-pagetemplate-contact .wrapper {
@@ -43,7 +43,7 @@ p {
   }
 
   header {
-    height: 30%;
+    padding-bottom: 14%;
   }
 
     header nav {
@@ -61,7 +61,8 @@ p {
           margin-right: 7%;
         }
 
-          header nav li.current-menu-item a {
+          header nav li.current-menu-item a,
+          header nav li.current_page_parent a {
             color: rgb(177, 0, 69);
             border-bottom: 2px solid rgb(177, 0, 69);
           }
@@ -162,8 +163,6 @@ p {
       position: relative;
       width: 50%;
       float: left;
-      max-height: 500px;
-      overflow: scroll;
     }
 
   main.contact {
@@ -195,12 +194,25 @@ p {
       }
 
   main.post {
-    padding: 0 10%;
+    padding: 0 10% 5%;
   }
+
+    main.post .content {
+      width: 60%;
+      float: inherit;
+      margin: 0 auto;
+    }
 
     main.post h1 {
       font-size: 2.5rem;
       line-height: 3.2rem;
+      font-weight: 300;
+    }
+
+    main.post h2 {
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+      margin-bottom: -1rem;
       font-weight: 300;
     }
 
