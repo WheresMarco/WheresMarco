@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+
+/* $RESET */
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* $ANIMATIONS */
+@keyframes fade-in-up {
+	from {
+		opacity: 0;
+		transform: translateY(1.5rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* $STYLES */
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+}
+  h1 {
+    font-size: 108px;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 36px;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    font-size: 0.9em;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+    a:hover { color: #fec365; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 830px;
+}
+
+.callout {
+  background-color: #fff;
+  color: #d84596;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+  .callout:hover {
+    opacity: 0.7;
+    color: #000;
+  }
+
+#site-head {
+  background: linear-gradient(135deg, #fec365 0%, #d84596 100%);
+  color: #fff;
+  padding: 60px 0;
+}
+  #site-head .wrapper h1,
+  #site-head .wrapper p {
+    -webkit-animation: "fade-in-up" .5s ease-in-out .25s;
+    animation: "fade-in-up" .5s ease-in-out .25s;
+	  animation-fill-mode: both;
+  }
+
+  #site-head .wrapper .callout {
+    -webkit-animation: "fadein" .4s ease-in-out .10s;
+    animation: "fadein" .4s ease-in-out .10s;
+	  animation-fill-mode: both;
+    animation-delay: .9s;
+  }
+
+  #site-head h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 3rem;
+  }
+
+  #site-head #action { margin-top: 30px; }
+
+#site-main {
+  margin-top: 60px;
+  -webkit-animation: "fadein" .4s ease-in-out .10s;
+  animation: "fadein" .4s ease-in-out .10s;
+  animation-fill-mode: both;
+  animation-delay: 1.4s;
+}
+
+#case-list {
+  list-style: none;
+}
+  #case-list li {
+    border-top: .1rem solid #d84596;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.4;
+    padding-top: 2rem;
+    line-height: inherit;
+    margin-bottom: 10px;
+  }
+    #case-list li:first-of-type {
+      border-top: none;
+      margin-top: -30px;
+    }
+
+    #case-list li a {
+      color: #000;
+    }
+      #case-list li a:hover {
+        color: #fec365;
+      }
+
+    #case-list li .info {
+      flex: 1 1 30%;
+      font-weight: 500;
+      max-width: calc( 33.33% - 1.3rem );
+      font-family: 'Montserrat', sans-serif;
+    }
+      #case-list li .info  h3 a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      #case-list li .info  h4 {
+        font-size: 1.4rem;
+      }
+
+      #case-list li .info  time {
+        font-size: 1.3rem;
+      }
+
+    #case-list li .desc {
+      flex: 1 1 65%;
+      max-width: calc( 70% - 2.66rem );
+      font-size: 1.3rem;
+    }
+
+#site-footer {
+  margin-top: 60px;
+  clear: both;
+  background: linear-gradient(135deg, #fec365 0%, #d84596 100%);
+  color: #fff;
+  padding: 60px 0;
+}
+
+/* $MEDIA QUERIES */
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    padding: 0 2rem;
+  }
+
+  #site-head h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #case-list li {
+    display: block;
+  }
+
+  #case-list li .info {
+    margin-bottom: 20px;
+  }
+
+  #case-list li .desc {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #site-head,
+  #site-footer {
+    padding: 30px 0;
+  }
+
+  .callout {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
