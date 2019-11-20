@@ -70,6 +70,7 @@ body {
     a.angry:hover { color: #ff5050; }
     a.billio:hover { color: #d052a5; }
     a.nutopia:hover { color: #efdc54; }
+    a.kvittar:hover { color: #5DCC94; }
 
 .wrapper {
     margin: 3rem;
