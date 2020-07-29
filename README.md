@@ -5,4 +5,4 @@ During my free time I’m developing my [ticket system](https://billio.app), a m
 
 Most of the coding I do is outside of GitHub, so some repos may seem dusty.
 
-If you have any questions just ping me 🎉👍
+💛 I share things and thoughts on [Twitter](https://twitter.com/wheresmarco). You can also [ask me anything](https://github.com/WheresMarco/WheresMarco/issues).
