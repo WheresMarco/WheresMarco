@@ -1,5 +1,5 @@
 # 👋
-My name is Marco Hyyryläinen and I'm a Web Developer from Sweden. I'm currently working at @angrycreative. 
+My name is Marco Hyyryläinen and I'm a Web Developer from Sweden. I'm currently working at [Angry Creative](https://angrycreative.com). 
 
 During my free time I’m developing my [ticket system](https://billio.app), a member management system, and [a blog about everything wonderful on the internet](https://nutopia.se).
 
