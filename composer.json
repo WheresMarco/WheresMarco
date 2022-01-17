@@ -15,6 +15,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
+        "spatie/fork": "^1.1",
         "statamic/cms": "3.2.*",
         "statamic/ssg": "^0.9.0"
     },
