@@ -13,6 +13,7 @@ module.exports = {
             transparent: 'transparent',
             black: '#000',
             white: '#fff',
+            whiteish: '#fcfdff',
             teal: '#008483',
             'teal-light': '#a6d0cf',
             gray: {

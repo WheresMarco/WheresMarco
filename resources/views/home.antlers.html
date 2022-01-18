@@ -1,11 +1,11 @@
-<div class="max-w-5xl mx-auto relative py-16 lg:pt-40 lg:pb-32">
-    <article class="content">
-        <p class="font-medium text-lg text-teal">{{ subtitle }}</p>
-        <h1>{{ content }}</h1>
+<div class="max-w-5xl mx-auto relative py-16 lg:pt-12 lg:pb-32">
+    <article class="flex align-middle">
+        <img src="https://pbs.twimg.com/profile_images/1288411568330465281/L-lpFRCz_400x400.jpg" class="rounded-full w-32 h-32 mx-auto mb-8" alt="">
+        <div class="content">{{ content }}</div>
     </article>
 </div>
 
-<div class="max-w-2xl mx-auto mb-32">
+<div class="max-w-2xl mx-auto mb-32 border-gray-200 border-t-2 pt-16">
     {{ collection:articles limit="5" as="articles" }}
         {{ if no_results }}
             <h2 class="text-3xl italic tracking-tight">Feel the rhythm! Feel the rhyme! Get on up, it's writing time! Cool writings!</h2>

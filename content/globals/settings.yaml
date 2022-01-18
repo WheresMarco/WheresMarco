@@ -1,17 +1,16 @@
-id: 9242876a-41c4-42f8-96f8-ac92d6025406
 title: Settings
 data:
-  site_name: 'Cool Writings'
+  site_name: 'Marco Hyyryläinen'
   social:
     -
       name: Twitter
-      url: 'https://twitter.com/jackmcdade'
+      url: 'https://twitter.com/wheresmarco'
       icon: site/social-icons/twitter.svg
     -
       name: Github
-      url: 'https://github.com/statamic/starter-kit-cool-writings'
+      url: 'https://github.com/wheresmarco'
       icon: site/social-icons/github.svg
     -
       name: Email
-      url: 'mailto:jack@statamic.com'
+      url: 'mailto:marco@wheresmar.co'
       icon: site/social-icons/email.svg
